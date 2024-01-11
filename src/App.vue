@@ -37,9 +37,9 @@ const play = (c) => {
 
   const choices = ["rock", "paper", "scissors"];
   const random = Math.floor(Math.random() * 3);
-  computerChoice.value = choice[random];
+  computerChoice.value = choices[random];
 
-  const outcome = [c][computerChoice.value];
+  const outcome = outcomes[c][computerChoice.value];
 
   if (outcome === "win") {
     wins.value++;
@@ -110,6 +110,25 @@ onMounted(() => {
           class="w-64 p-6 mx-6 transition-transform duration-300 transform hover:scale-110"
         >
           <img src="./assets/scissors.png" alt="Scissors" class="w-full" />
+        </button>
+      </div>
+
+      <div v-else>
+        <div class="text-3xl mb-4">
+          You picked <span class="text-pink-500">{{ choice }}</span>
+        </div>
+
+        <div class="text-3xl mb-4">
+          The computer picked
+          <span class="text-green-500">{{ computerChoice }}</span>
+        </div>
+
+        <div class="text-6xl mb-12">
+          {{ verdict }}
+        </div>
+
+        <button @click="ResetRound" class="bg-pink-500 text-lg py-2 px-4">
+          Reset
         </button>
       </div>
     </main>
