@@ -85,5 +85,33 @@ onMounted(() => {
 </script>
 
 <template>
-  <h1 class="text-3xl font-bold underline">Hello world!</h1>
+  <div class="bg-gray-700 text-white text-center min-h-screen flex flex-col">
+    <header class="container mx-auto p-6">
+      <h1 class="text-4xl font-bold">ROCK, PAPER, SCISSORS</h1>
+    </header>
+    <main class="container mx-auto p-6 flex-1">
+      <div v-if="choice === null" class="flex items-center justify-center mx-6">
+        <button
+          @click="play('rock')"
+          class="w-64 p-6 mx-6 transition-transform duration-300 transform hover:scale-110"
+        >
+          <img src="./assets/rock.png" alt="Rock" class="w-full" />
+        </button>
+
+        <button
+          @click="play('paper')"
+          class="w-64 p-6 mx-6 transition-transform duration-300 transform hover:scale-110"
+        >
+          <img src="./assets/paper.png" alt="Paper" class="w-full" />
+        </button>
+
+        <button
+          @click="play('scissors')"
+          class="w-64 p-6 mx-6 transition-transform duration-300 transform hover:scale-110"
+        >
+          <img src="./assets/scissors.png" alt="Scissors" class="w-full" />
+        </button>
+      </div>
+    </main>
+  </div>
 </template>
