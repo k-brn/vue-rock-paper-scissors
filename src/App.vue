@@ -96,21 +96,21 @@ onMounted(() => {
       >
         <button
           @click="play('rock')"
-          class="w-full sm:w-64 p-6 mx-2 my-2 transition-transform duration-300 transform hover:scale-110"
+          class="w-64 p-6 mx-6 transition-transform duration-300 transform hover:scale-110 sm:w-80 lg:w-96 xl:w-112 xl:p-8"
         >
           <img src="./assets/rock.png" alt="Rock" class="w-full" />
         </button>
 
         <button
           @click="play('paper')"
-          class="w-full sm:w-64 p-6 mx-2 my-2 transition-transform duration-300 transform hover:scale-110"
+          class="w-64 p-6 mx-6 transition-transform duration-300 transform hover:scale-110 sm:w-80 lg:w-96 xl:w-112 xl:p-8"
         >
           <img src="./assets/paper.png" alt="Paper" class="w-full" />
         </button>
 
         <button
           @click="play('scissors')"
-          class="w-full sm:w-64 p-6 mx-2 my-2 transition-transform duration-300 transform hover:scale-110"
+          class="w-64 p-6 mx-6 transition-transform duration-300 transform hover:scale-110 sm:w-80 lg:w-96 xl:w-112 xl:p-8"
         >
           <img src="./assets/scissors.png" alt="Scissors" class="w-full" />
         </button>
