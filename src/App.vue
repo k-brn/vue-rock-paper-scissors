@@ -62,9 +62,9 @@ const SaveGame = () => {
 };
 
 const LoadGame = () => {
-  wins.value = parsInt(localStorage.getItem("wins")) || 0;
-  draws.value = parsInt(localStorage.getItem("draws")) || 0;
-  losses.value = parsInt(localStorage.getItem("losses")) || 0;
+  wins.value = parseInt(localStorage.getItem("wins")) || 0;
+  draws.value = parseInt(localStorage.getItem("draws")) || 0;
+  losses.value = parseInt(localStorage.getItem("losses")) || 0;
 };
 
 const ResetRound = () => {
@@ -90,24 +90,27 @@ onMounted(() => {
       <h1 class="text-4xl font-bold">ROCK, PAPER, SCISSORS</h1>
     </header>
     <main class="container mx-auto p-6 flex-1">
-      <div v-if="choice === null" class="flex items-center justify-center mx-6">
+      <div
+        v-if="choice === null"
+        class="flex flex-wrap items-center justify-center mx-6"
+      >
         <button
           @click="play('rock')"
-          class="w-64 p-6 mx-6 transition-transform duration-300 transform hover:scale-110"
+          class="w-full sm:w-64 p-6 mx-2 my-2 transition-transform duration-300 transform hover:scale-110"
         >
           <img src="./assets/rock.png" alt="Rock" class="w-full" />
         </button>
 
         <button
           @click="play('paper')"
-          class="w-64 p-6 mx-6 transition-transform duration-300 transform hover:scale-110"
+          class="w-full sm:w-64 p-6 mx-2 my-2 transition-transform duration-300 transform hover:scale-110"
         >
           <img src="./assets/paper.png" alt="Paper" class="w-full" />
         </button>
 
         <button
           @click="play('scissors')"
-          class="w-64 p-6 mx-6 transition-transform duration-300 transform hover:scale-110"
+          class="w-full sm:w-64 p-6 mx-2 my-2 transition-transform duration-300 transform hover:scale-110"
         >
           <img src="./assets/scissors.png" alt="Scissors" class="w-full" />
         </button>
