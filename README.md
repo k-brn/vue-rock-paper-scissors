@@ -20,7 +20,7 @@
 
 ## How To Use:
 
-1. Visit the [Rock Paper Scissors website]().
+1. Visit the [Rock Paper Scissors website](https://rock-paper-scissors-vue-js-kappa.vercel.app).
 2. Click Rock, Paper, or Scissors to make a selection.
 3. View the game results displayed on the screen.
 4. Press 'R' on your keyboard to reset the game for a new round.
