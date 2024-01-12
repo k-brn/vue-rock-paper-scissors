@@ -1,29 +1,26 @@
-# vue-rock-paper-scissors
+# Rock Paper Scissors
 
-This template should help get you started developing with Vue 3 in Vite.
+## How It's Made:
 
-## Recommended IDE Setup
+**Tech used:** Vue.js, Tailwind CSS
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+## How It Works:
 
-## Customize configuration
+- Player selects Rock, Paper, or Scissors.
+- Computer randomly chooses its move.
+- Game logic determines the winner (Win, Draw, or Lose).
+- Results and win percentage are instantly displayed.
+- Pressing 'R' resets the game for a new round.
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+## Features:
 
-## Project Setup
+- Simple interface with buttons for Rock, Paper, and Scissors.
+- Instant display of game results after making a selection.
+- Press 'R' on your keyboard to reset the game for a new round.
 
-```sh
-npm install
-```
+## How To Use:
 
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
+1. Visit the [Rock Paper Scissors website]().
+2. Click Rock, Paper, or Scissors to make a selection.
+3. View the game results displayed on the screen.
+4. Press 'R' on your keyboard to reset the game for a new round.
